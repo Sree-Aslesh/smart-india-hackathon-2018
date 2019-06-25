@@ -1,0 +1,27 @@
+from pymongo import MongoClient
+
+try:
+	conn= MongoClient('127.0.0.1:27017')
+	print("connected")
+except:
+	print("connection failed")
+
+db= conn.database
+
+collection= db.table1
+
+def insert():
+	barcode= raw_input("enter barcode")
+	address= raw_input("enter address")
+	pincode= raw_input("enter pincode")
+	length=  raw_input("enter length")
+	breadth= raw_input("enter breadth")
+	weight=  raw_input("enter weight")
+	owner=   raw_input("enter owner")
+	payment= raw_input("entr cash mode")
+	collection.insert_one({"barcode":barcode,"add":address,"pincode":pincode,
+	"length":length,"breadth":breadth,"weight":weight,"owner":owner,"mode of payment":payment})
+	print("inserted")
+	
+
+print("select 1. for insert")

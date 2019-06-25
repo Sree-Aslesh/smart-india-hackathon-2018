@@ -1,0 +1,12 @@
+Considering, at least 0.1% of error by 1 sorter,
+ then,
+	number of parcels , getting
+	sorted wrong = 
+
+
+Considering, at least 50 sorters in a postal hub,
+	then,
+	Total number of parcels,
+	getting sorted wrong =
+ 	(out of 50 * 800= 40,000
+	parcels)

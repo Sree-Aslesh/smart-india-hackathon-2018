@@ -1,0 +1,22 @@
+from tkinter import *
+
+def match():
+	if e1.get()=="india"
+		if e2.get()=="1234"
+			print("authorized user")
+
+root= Tk()
+frame= Frame(root)
+frame.pack()
+Label(frame, text="USER NAME").grid(row=2)
+Label(frame, text="PASSWORD").grid(row=4)
+
+e1= Entry(frame)
+e2= Entry(frame)
+
+e1.grid(row=2, column=3)
+e2.grid(row=4, column=3)
+
+Button(frame, text="LOG IN", command= match).grid(row=6,column=3)
+mainloop()
+
